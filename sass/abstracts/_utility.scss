@@ -1,0 +1,9 @@
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.shadow-on {
+  background-color: rgba($black, 0.9) !important;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.8);
+}

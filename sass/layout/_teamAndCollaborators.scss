@@ -1,0 +1,136 @@
+.teamAndCollaborators {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10rem 5%;
+  // parallax background
+  background-image: url("../../images/Mars.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* OUR TEAMS */
+  .our-team {
+    @include flex-vc;
+    background: rgba($black, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    position: relative;
+    padding: 5rem 0;
+    box-shadow: 4px -5px 12px 0px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 4px -5px 12px 0px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 4px -5px 12px 0px rgba(0, 0, 0, 0.71);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+
+    &__container {
+      @include flex-sb;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-top: 3rem;
+    }
+
+    &__member {
+      width: 15rem;
+      flex: 0 1 20rem;
+      img {
+        width: 15rem;
+        height: 15rem;
+        border: none;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 2rem;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      .contact-links {
+        @include flex-se;
+        padding: 1rem 0;
+
+        .im {
+          @include flex-c;
+          font-size: 1.6rem;
+          border: 1px solid #f3f4f6;
+          color: #f3f4f6;
+          border-radius: 50%;
+          padding: 0.8rem;
+          transition: all 200ms ease-in;
+        }
+
+        .im:hover {
+          border: 1px solid $accent-color;
+          color: $accent-color;
+        }
+      }
+    }
+
+    .btn-container {
+      @include flex-c;
+
+      .btn {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  /* COLLABORATORS */
+  .collaborators {
+    @include flex-vse;
+    background: linear-gradient(
+      to bottom right,
+      rgba(#2563eb, 0.2),
+      rgba(#34d399, 0.6)
+    );
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    border-radius: 5px;
+
+    &__heading {
+      padding: 1rem;
+      margin: 5rem auto;
+    }
+
+    &__container {
+      width: 100%;
+      background: rgba(white, 0.3);
+      padding: 5rem 0rem;
+
+      @include flex-se;
+      overflow: hidden;
+
+      &--box {
+        width: 80%;
+        background: transparent;
+        padding: 2rem 0rem;
+
+        @include flex-sb;
+
+        img {
+          width: 15rem;
+          height: 15rem;
+          border-radius: 25%;
+        }
+
+        img:not(:last-child) {
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
+}

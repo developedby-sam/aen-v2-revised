@@ -1,0 +1,63 @@
+@import "./_dropdown";
+.nav {
+  position: fixed;
+  width: 100%;
+  min-height: 10vh;
+  z-index: 50;
+  padding: 0 5%;
+  transition: all 100ms ease-in-out;
+  background-color: rgba($black, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    @include flex-c;
+
+    .logo {
+      display: inline-block;
+      font-weight: 300;
+      color: $gray;
+      width: 15rem;
+      height: auto;
+      margin-top: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__nav-links {
+    width: 60%;
+
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    a {
+      font-weight: 300;
+    }
+
+    .im {
+      font-size: 1.1rem;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-link {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

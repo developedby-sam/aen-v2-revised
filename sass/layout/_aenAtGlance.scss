@@ -1,0 +1,65 @@
+.aen-at-glance {
+  @include flex-vse;
+  background-color: rgba($black, 0.7);
+  backdrop-filter: blur(10px);
+  color: $text-color;
+  border-radius: 5px;
+  position: relative;
+  padding-top: 4rem;
+  //shadow
+  box-shadow: 4px -5px 12px 0px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 4px -5px 12px 0px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 4px -5px 12px 0px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+
+  &__desc {
+    width: 60%;
+    margin-top: 1rem;
+    padding: 4rem 0rem;
+    padding: 2rem 0;
+    font-weight: 300;
+  }
+
+  &__numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 4rem 0rem;
+
+    &--events,
+    &--participants,
+    &--members,
+    &--partners,
+    &--schools {
+      margin: 2rem 0 0 0;
+
+      img {
+        width: 8rem;
+        height: 8rem;
+      }
+
+      h3 {
+        font-size: 6rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        padding: 1rem 0rem;
+      }
+    }
+
+    &--volunteers,
+    &--members {
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../components/_cards.scss";
+/* RESOURCES AND EVENTS CONTAINER */
+.rae {
+  //
+  background-color: black;
+  padding: 5rem 5%;
+  @include flex-vc;
+
+  &__title + p {
+    max-width: 520px;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  &__container {
+    @include flex-se;
+    flex-wrap: wrap;
+    grid-row-gap: 5rem;
+    grid-column-gap: 5rem;
+    width: 100%;
+    margin: 8rem auto;
+  }
+
+  &__item {
+    @include flex-vc;
+    flex: 0 1 30rem;
+
+    @include respond(tab-port) {
+      flex: 0 1 20rem;
+    }
+
+    @include respond(phone) {
+      flex: 0 1 15rem;
+    }
+  }
+
+  .card.rae-item {
+    @include respond(tab-land) {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    @include respond(tab-port) {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @include respond(phone) {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}

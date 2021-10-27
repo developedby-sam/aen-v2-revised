@@ -1,0 +1,54 @@
+/* INTRO CONTAINER */
+.intro {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10rem 5%;
+  position: relative;
+  @include flex-vc;
+
+  background-image: url("../../images/bg2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // Intro text
+  &__text {
+    margin-bottom: 10rem;
+    p {
+      color: $heading-color;
+      font-size: 8rem;
+      font-weight: 500;
+
+      @include respond(tab-land) {
+        font-size: 7rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 6rem;
+      }
+
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  // Visualize solar-system button
+  &__btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* INTRO CONTAINER */
+.parallax-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10rem 5%;
+
+  background-image: url("../../images/bg4.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

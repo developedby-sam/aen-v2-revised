@@ -1,0 +1,28 @@
+.footer {
+  background: black;
+  padding: 2rem 0rem;
+  @include flex-sb;
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  &__links-link,
+  &__copyright p {
+    color: #8c8c8c;
+
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+
+  &__copyright,
+  &__links {
+    width: 45%;
+    border-top: 0.2rem solid #8c8c8c;
+    padding: 2rem 1rem;
+  }
+}

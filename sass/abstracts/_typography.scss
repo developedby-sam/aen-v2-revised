@@ -1,0 +1,48 @@
+/* PRIMARY HEADING */
+.primary-heading {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: $heading-color;
+  margin: 0 auto;
+  transition: $transition;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $accent-color;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 0px;
+    opacity: 0;
+    margin: 0 auto;
+    transition: $transition;
+  }
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+/* SECONDARY HEADING */
+.secondary-heading {
+  display: inline-block;
+  font-size: 3.6rem;
+  font-weight: lighter;
+  text-align: center;
+  color: $gray;
+
+  padding: 2rem 0 1rem 0;
+  margin: 0rem auto;
+
+  border-bottom: 1.5px inset $accent-color;
+}

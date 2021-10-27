@@ -1,0 +1,19 @@
+.gallery {
+	background-color: black;
+	padding: 5rem 5%;
+	@include flex-vc;
+
+	h2 {
+		margin-top: 0 !important;
+	}
+
+	p {
+		padding: 3rem 8rem;
+		text-align: center;
+	}
+
+	&__container {
+		@include flex-se;
+		flex-wrap: wrap;
+	}
+}

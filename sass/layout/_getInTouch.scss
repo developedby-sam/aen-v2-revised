@@ -1,0 +1,63 @@
+.getInTouch {
+  @include flex-vc;
+  background-color: black;
+  padding-bottom: 5rem;
+
+  .contact-details {
+    @include flex-se;
+    width: 100%;
+  }
+
+  .contact {
+    @include flex-sb;
+
+    .contact-icon {
+      margin-right: 2.5rem;
+
+      .im {
+        color: lighten(orange, 15%);
+      }
+    }
+
+    .contact-text {
+      h3 {
+        font-weight: bolder;
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+        text-align: left;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: lighter;
+        padding-top: -1rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .secondary-heading {
+    margin: 4rem auto;
+    font-size: bolder;
+  }
+
+  .social-links {
+    @include flex-c;
+    flex-wrap: wrap;
+
+    .link {
+      margin: 0 2rem;
+      flex: 0 0 3rem;
+      @include flex-c;
+      .im {
+        font-size: 3rem;
+        color: lighten(orange, 15%);
+        transition: all 300ms ease-in;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

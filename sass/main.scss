@@ -1,0 +1,29 @@
+// importing abstracts
+@import "./abstracts/_variables";
+@import "./abstracts/_mixins";
+@import "./abstracts/_typography";
+@import "./abstracts/_utility";
+
+// importing base styles
+@import "./base/_base";
+
+// importing components
+@import "./components/_nav";
+@import "./components/_buttons";
+@import "./components/_imageSlider";
+@import "./components/_gallery";
+@import "./components/infiniteSlider";
+@import "./components/_contactForm";
+
+// importing layouts
+@import "./layout/_rae";
+@import "./layout/_apod";
+@import "./layout/_aenAtGlance";
+@import "./layout/_gallery";
+@import "./layout/_teamAndCollaborators";
+@import "./layout/_getInTouch";
+@import "./layout/_footer";
+
+// importing pages
+@import "./pages/_homepage";
+@import "./pages/gallery";
